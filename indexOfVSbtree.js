@@ -25,13 +25,23 @@ Array.prototype.indexOfCommonAlgorythm = function(value){
 
 
 Array.prototype.bTree = [];
-Array.prototype.doUpdateBTree = false;
+Array.prototype.bTreeUpate = false;
 Array.makeBTree = function(array){
-
+    let len = array.length;
+    if(array.length < 3) return array;
+    let edges = []; // 
+    let nodes = []; // Array of [[[key1,value1],[key2,value2]],[child1,child2,child3]]
+    for(let i = 0; i < len; i++){
+        let nodePointer = 0;
+        while (true) {
+            if(nodes[nodePointer]) break;
+        }
+        result.push(array[i])
+    }
 }
 Array.prototype.indexOfUsingBTree = function(value){
-    if(!this.doUpdateBTree){
-        this.bTree = Array.makeBTree(this)
+    if(!this.prototype.bTreeUpate){
+        this.prototype.bTree = Array.makeBTree(this);
     }
     let 
 }
